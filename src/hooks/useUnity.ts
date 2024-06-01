@@ -19,10 +19,10 @@ const useUnity = () => {
     isLoaded,
     loadingProgression,
   } = useUnityContext({
-    loaderUrl: "Build/RollingBall.loader.js",
-    dataUrl: "Build/RollingBall.data",
-    frameworkUrl: "Build/RollingBall.framework.js",
-    codeUrl: "Build/RollingBall.wasm",
+    loaderUrl: "Build/Running.loader.js",
+    dataUrl: "Build/Running.data",
+    frameworkUrl: "Build/Running.framework.js",
+    codeUrl: "Build/Running.wasm",
   });
 
   const connectSuiWallet = useCallback(() => {
