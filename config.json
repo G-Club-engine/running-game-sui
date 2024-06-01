@@ -1,0 +1,9 @@
+{
+    "URL_ZK_PROVER": "https://prover-dev.mystenlabs.com/v1",
+    "URL_SALT_SERVICE": "/dummy-salt-service.json",
+    "SETUP_DATA_KEY": "zklogin-demo.rolling-ball.setup",
+    "ACCOUNT_DATA_KEY": "zklogin-demo.rolling-ball.account",
+    "FULLNODE_URL": "https://fullnode.testnet.sui.io",
+    "CLIENT_ID_GOOGLE": "865946234585-doqct5lsiphq7mr04h05i9dn83ahrvns.apps.googleusercontent.com",
+    "CLIENT_ID_TWITCH": "61xthrqzfgszg82hxo5c3jwxof191d"
+  }

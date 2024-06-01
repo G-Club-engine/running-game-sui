@@ -1,0 +1,41 @@
+{
+  "name": "gclup_authentication_zklogin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "start:dev": "env-cmd -f .env/.env.development next dev",
+    "build:dev": "env-cmd -f .env/.env.development next build",
+    "start:stag": "env-cmd -f .env/.env.staging next start",
+    "build:stag": "env-cmd -f .env/.env.staging next build",
+    "start:main": "env-cmd -f .env/.env.production next start",
+    "build:main": "env-cmd -f .env/.env.production next build",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@metamask/sdk-react": "^0.18.6",
+    "@mysten/dapp-kit": "^0.13.1",
+    "@mysten/sui.js": "0.51.2",
+    "@mysten/zklogin": "^0.6.0",
+    "@polymedia/suits": "^0.0.41",
+    "@suiet/wallet-kit": "^0.2.24",
+    "framer-motion": "^11.1.7",
+    "jwt-decode": "^4.0.0",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-unity-webgl": "^9.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
