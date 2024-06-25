@@ -1,22 +1,22 @@
-import { JwtPayload } from "@/types/JWTPayload";
-import { jwtDecode } from "jwt-decode";
-import config from "../../config.json";
-import {
-  generateNonce,
-  generateRandomness,
-  getExtendedEphemeralPublicKey,
-  jwtToAddress,
-} from "@mysten/zklogin";
-import { Ed25519Keypair } from "@mysten/sui.js/keypairs/ed25519";
+import SUI_CLIENT from "@/services/suiClient";
 import { OpenIdProvider } from "@/types/AccountData";
-import useUnity from "./useUnity";
+import { JwtPayload } from "@/types/JWTPayload";
 import {
   keypairFromSecretKey,
   loadSetupData,
   saveAccount,
   saveSetupData,
 } from "@/utils/local";
-import SUI_CLIENT from "@/services/suiClient";
+import { Ed25519Keypair } from "@mysten/sui.js/keypairs/ed25519";
+import {
+  generateNonce,
+  generateRandomness,
+  getExtendedEphemeralPublicKey,
+  jwtToAddress,
+} from "@mysten/zklogin";
+import { jwtDecode } from "jwt-decode";
+import config from "../../config.json";
+import useUnity from "./useUnity";
 
 const useZkLogin = () => {
   const { sendMessage, isLoaded } = useUnity();

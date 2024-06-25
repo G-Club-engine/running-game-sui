@@ -4,7 +4,6 @@ import { Ed25519Keypair } from '@mysten/sui.js/keypairs/ed25519'
 import { TransactionBlock } from '@mysten/sui.js/transactions'
 import { genAddressSeed, getZkLoginSignature } from '@mysten/zklogin'
 import { useEffect, useState } from 'react'
-import { SuiClient, getFullnodeUrl } from '@mysten/sui.js/client'
 const accountDataKey = 'zklogin.accounts'
 
 type OpenIdProvider = 'Google' | 'Twitch' | 'Facebook'
